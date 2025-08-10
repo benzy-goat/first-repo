@@ -36,6 +36,10 @@ class User extends Authenticatable
         return $this->morphOne(Image::class, 'imageable')->oldestOfMany();
     }
 
+    public function surname(){
+        echo "test";
+    }
+
     // accessor and mutator
     protected function name(): Attribute
     {
